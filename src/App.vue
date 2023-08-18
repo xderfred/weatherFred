@@ -1,25 +1,39 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderView/>
+  <SearchView/>
+  <CityCardsView/>
+  <ResultView />
+  <FooterView/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderView from './components/HeaderView.vue';
+import FooterView from './components/FooterView.vue'
+import SearchView from './components/SearchView.vue';
+import CityCardsView from './components/CityCardsView.vue';
+import ResultView from './components/ResultView.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HeaderView,
+    FooterView,
+    SearchView,
+    CityCardsView,
+    ResultView
+}
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    * {
+      margin: 0;
+      padding: 0;
+    }
+}
+
+body {
+  margin: 0;
 }
 </style>
